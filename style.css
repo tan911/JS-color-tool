@@ -90,9 +90,10 @@ input[type='text'] {
   border-radius: 30px;
   padding: 5px;
   margin: 0 10px;
+  cursor: pointer;
 }
 
-.inner-circle {
+.inner-circle
   width: 30px;
   height: 30px;
   border-radius: 50%;
