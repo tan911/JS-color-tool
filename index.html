@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Color Tool</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Color Lighten/Darken</h1>
+      <label for="hex">Color (Hex)</label>
+      <input
+        type="text"
+        name="hex"
+        id="hexInput"
+        placeholder="#000000"
+        value="#c6d5ac"
+      />
+
+      <div class="toggle">
+        <p id="lightenText" class="toggle-text">Lighten</p>
+        <div id="toggleBtn" class="toggle-btn">
+          <div class="inner-circle"></div>
+        </div>
+        <p id="darkenText" class="toggle-text unselected">Darken</p>
+      </div>
+
+      <label for="slider" id="sliderText">0%</label>
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="slider"
+        name="slider"
+      />
+      <p>Input Color</p>
+      <div id="inputColor" class="box"></div>
+      <p id="alteredColorText">Altered Color</p>
+      <div id="alteredColor" class="box"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
